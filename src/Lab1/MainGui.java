@@ -52,6 +52,14 @@ public class MainGui extends JFrame implements ActionListener{
         
     }
 
+    public JLabel getLblOutput() {
+        return lblOutput;
+    }
+
+    public JTextField getTxtInput() {
+        return txtInput;
+    }
+
     
     
 }

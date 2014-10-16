@@ -34,7 +34,10 @@ public class MainWindow extends javax.swing.JFrame {
         btnSayHello = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("my first gui");
 
+        lblPrompt.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblPrompt.setForeground(new java.awt.Color(102, 0, 102));
         lblPrompt.setText("Enter Name");
 
         btnSayHello.setText("Say Hello");
@@ -53,7 +56,7 @@ public class MainWindow extends javax.swing.JFrame {
                 .addComponent(lblPrompt)
                 .addGap(83, 83, 83)
                 .addComponent(txtInput, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(55, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -70,7 +73,7 @@ public class MainWindow extends javax.swing.JFrame {
                     .addComponent(txtInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(61, 61, 61)
                 .addComponent(lblOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                 .addComponent(btnSayHello)
                 .addGap(86, 86, 86))
         );
@@ -78,6 +81,7 @@ public class MainWindow extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    ///                                     fully qualified name so dont need imports
     private void btnSayHelloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSayHelloActionPerformed
         // TODO add your handling code here:
         String name = txtInput.getText();
