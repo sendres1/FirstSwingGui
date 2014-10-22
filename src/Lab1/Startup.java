@@ -27,7 +27,7 @@ public class Startup {
             @Override
             public void run() {
                 new MainGui().setVisible(true);
-   //             Window3 w3 = new Window3();
+                //             Window3 w3 = new Window3();
                 //             w3.setVisible(true);
                 //             new Window2(w3).setVisible(true);
             }

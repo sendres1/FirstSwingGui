@@ -10,7 +10,10 @@ package Lab1;
  *
  * @author sendres1
  */
-public class MyButtonListerner implements ActionListner{
+public class MyButtonListerner 
+
+//implements ActionListner
+{
     //need imports etc.
     
 }
